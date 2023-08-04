@@ -23,11 +23,12 @@ repositories {
 
 ext {
     set('springCloudVersion', "2022.0.3")
+    set('commonsLangVersion', '3.12.0')
 }
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
-
+    implementation "org.apache.commons:commons-lang3:${commonsLangVersion}"
     implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
 
     compileOnly 'org.projectlombok:lombok'
